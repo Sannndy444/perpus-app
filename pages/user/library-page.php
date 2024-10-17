@@ -1,3 +1,7 @@
+<?php
+require '../config/config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +10,9 @@
     <title>Perpus Simple</title>
 </head>
 <body>
-    tes
+    <div class="library-container">
+
+    </div>
 
     <a href="../process/logout.php">Logout</a>
 </body>

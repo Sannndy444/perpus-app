@@ -6,14 +6,15 @@
     <title>Perpus Simple</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="navbar">
-                <ul class="nav">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">Book</a></li>
-                    <li><a href="contact.php">Categories</a></li>
-                </ul>
+    <div class="landing-container">
+        <div class="landing">
+            <div class="title">
+                <h2>
+                    Selamat Datang Di PerpusApp
+                </h2>
+            </div>
+            <div class="content">
+                <a href="pages/login-page.php">Login</a>
             </div>
         </div>
     </div>

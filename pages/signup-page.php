@@ -10,7 +10,7 @@ require '../config/config.php';
     <title>Perpus Simple</title>
 </head>
 <body>
-    <div class="container">
+    <div class="signup-container">
         <div class="signup">
             <div class="title">
                 <h2>Signup</h2>

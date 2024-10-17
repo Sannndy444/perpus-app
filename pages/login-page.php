@@ -10,7 +10,7 @@ require '../config/config.php';
     <title>Login</title>
 </head>
 <body>
-    <div class="container">
+    <div class="login-container">
         <div class="login">
             <div class="title">
                 <h2>Login</h2>

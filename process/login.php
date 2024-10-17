@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
     $result = mysqli_query($conn, $sql);
     if(mysqli_num_rows($result) == 1){
         $_SESSION['mailUser'] = $mailUser;
-        header('location: ../pages/book-page.php');
+        header('location: ../pages/boo-page.php');
     }
     else{
         echo 'Invalid email or password';
