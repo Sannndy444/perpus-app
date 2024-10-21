@@ -1,5 +1,6 @@
 <?php
-require '../config/config.php';
+require '../../config/config.php';
+session_start();
 
 if ($_SESSION["role"] !== 'admin') {
     echo "<script>alert('Access denied.');</script>";
@@ -13,16 +14,19 @@ if ($_SESSION["role"] !== 'admin') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add Author</title>
 </head>
 <body>
     <div class="author-container">
+        <div class="navbar">
+            <?php include '../navbar.php'; ?>
+        </div>
         <div class="author">
             <div class="title">
                 <h2>Add Author</h2>
             </div>
             <div class="author-form">
-                <form action="../process/addauthor.php" method="post">
+                <form action="../../process/addAuthor.php" method="post">
                     <div class="form-group">
                         <input type="authorName" name="authorName" id="authorName" placeholder="Enter author name" required>
                     </div>

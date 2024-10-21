@@ -16,7 +16,7 @@ require '../config/config.php';
                 <h2>Login</h2>
             </div>
             <div class="login-form">
-                <form action="../process/login.php" method="post">
+                <form action="../process/login.php" method="POST">
                     <div class="form-group">
                         <input type="mailUser" name="mailUser" id="mailUser" placeholder="Enter email or Username" required>
                     </div>

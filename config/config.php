@@ -3,10 +3,10 @@
 $server = "localhost";
 $user = "root";
 $pass = "";
-$db = "perpus_db";
+$database = "perpus_db";
 
-$conn = mysqli_connect($server, $user, $pass, $db);
+$db = mysqli_connect($server, $user, $pass, $database);
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if ($db->connect_error) {
+    die("Connection failed: " . $db->connect_error);
 }

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perpus Simple</title>
+
+    <script src="node_modules/feather-icons/dist/feather.js"></script>
+    <script src="node_modules/feather-icons/dist/feather.min.js"></script>
 </head>
 <body>
     <div class="landing-container">
@@ -18,5 +21,9 @@
             </div>
         </div>
     </div>
+
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>

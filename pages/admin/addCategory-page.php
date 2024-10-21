@@ -1,5 +1,6 @@
 <?php
-require '../config/config.php';
+require '../../config/config.php';
+session_start();
 
 if ($_SESSION["role"] !== 'admin') {
     echo "<script>alert('Access denied.');</script>";
@@ -17,14 +18,17 @@ if ($_SESSION["role"] !== 'admin') {
 </head>
 <body>
     <div class="categories-container">
+        <div class="navbar">
+            <?php include '../navbar.php'; ?>
+        </div>
         <div class="categories">
             <div class="title">
                 <h2>Add Categories</h2>
             </div>
             <div class="categories-form">
-                <form action="../process/addcategory.php" method="post">
+                <form action="../../process/addCategories.php" method="POST">
                     <div class="form-group">
-                        <input type="categoryName" name="categoryName" id="categoryName" placeholder="Enter category name" required>
+                        <input type="text" name="categoryName" id="categoryName" placeholder="Enter category name" required>
                     </div>
                     <div class="form-group">
                         <button type="submit" name="submit">Add</button>
